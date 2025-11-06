@@ -4,7 +4,7 @@ export default function BetaScreen({navigation}) {
     return (
         <View style={styles.container}>
             <Image style={styles.titleImg} source={{uri: "https://media.mdia.ca/img/flowers/flower-01-md.png"}}/>
-            <Text style={styles.title}>Beta SCreen</Text>
+            <Text style={styles.title}>Beta Screen</Text>
             <Text>This is the beta screen</Text>
             <View style={styles.buttonContainer}>
                 <Button 
@@ -20,7 +20,6 @@ export default function BetaScreen({navigation}) {
 const styles = StyleSheet.create({
     container: {
         alignItems: "center",
-        justifyContent: "center",
         height: "100%",
         gap: 10
     },

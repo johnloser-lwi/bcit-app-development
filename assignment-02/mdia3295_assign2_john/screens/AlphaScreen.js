@@ -20,7 +20,6 @@ export default function AlphaScreen({navigation}) {
 const styles = StyleSheet.create({
     container: {
         alignItems: "center",
-        justifyContent: "center",
         height: "100%",
         gap: 10
     },
