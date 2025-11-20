@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Mdia3295 Week12 Lab",
+    "slug": "mdia3295-week12-lab",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/bcit3295.png",
+    "splash": {
+      "image": "./assets/android-splash-port.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#003E6B"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "splash": {
+        "image": "./assets/ios-splash-port.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#003E6B"
+      }
+    },
+    "android": {
+      "icon": "./assets/bcit3295.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/bcit_nameonly.png",
+        "backgroundColor": "#003e6b"
+      }
+    },
+    "web": {
+      "favicon": "./assets/bcit_favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
