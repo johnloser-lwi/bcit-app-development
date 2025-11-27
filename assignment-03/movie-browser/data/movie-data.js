@@ -3,7 +3,7 @@ export function getAllMovies(){
 }
 
 export function getMovieById(id){
-
+    // return an item from the array with matching id
     return MOVIEDATA.find(item => item.id === id);    
 }
 

@@ -9,7 +9,6 @@ import { StyleSheet } from 'react-native';
 
 import Home from './screens/Home';
 import MovieBrowser from './screens/MovieBrowser';
-import About from './screens/MovieDetail';
 import MovieDetail from './screens/MovieDetail';
 
 const Stack = createNativeStackNavigator();
@@ -24,11 +23,11 @@ export default function App() {
             component={Home}
           />
           <Stack.Screen 
-            name="MovieBrowser"
+            name="Movie Browser"
             component={MovieBrowser}
           />
           <Stack.Screen 
-            name="MovieDetail"
+            name="Movie Detail"
             component={MovieDetail}
           />
         </Stack.Navigator>
@@ -36,12 +35,3 @@ export default function App() {
     </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#111',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

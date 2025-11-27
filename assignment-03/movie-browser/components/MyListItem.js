@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, Image, Button } from "react-native";
+import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 
 export default function MyListItem({itemData, navigatorRef}) {
     return (
@@ -12,10 +12,11 @@ export default function MyListItem({itemData, navigatorRef}) {
             </View>
 
             <View style={myListItemStyles.itemColGamma}>
-                <Button 
-                    title="Details"
-                    onPress={() => navigatorRef.navigate("FlowerDetail", {detailId: itemData.id})}
-                />
+                <TouchableOpacity style={myListItemStyles.detailButton}
+                    onPress={() => navigatorRef.navigate("Movie Detail", {detailId: itemData.id})}
+                >
+                    <Text style={myListItemStyles.buttonText}> Detail</Text>
+                </TouchableOpacity>
             </View>
         </View>
     );
@@ -23,7 +24,6 @@ export default function MyListItem({itemData, navigatorRef}) {
 
 const myListItemStyles = StyleSheet.create({
     itemContainer: {
-        //backgroundColor: '#eeeeee',
         marginVertical: 2,
         paddingHorizontal: 2,
         flex: 1,
@@ -58,5 +58,19 @@ const myListItemStyles = StyleSheet.create({
         fontSize: 18,
         color: '#fff'
     },
+
+    detailButton: {
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        backgroundColor: '#2563eb',
+        borderRadius: 8,
+        alignItems: 'center',
+        marginTop: 8,
+    },
+    buttonText: {
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: '600',
+    }
 
 });
